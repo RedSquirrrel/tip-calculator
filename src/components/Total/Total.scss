@@ -1,0 +1,26 @@
+@import './../../styles/variabiles.scss';
+
+.total-container {
+  padding: 1rem;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    p {
+      color: $clr__white;
+
+      span {
+        color: $clr__dark-grayish-cyan-1;
+        display: block;
+      }
+    }
+
+    div {
+      color: $clr__strong__cyan;
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import './variabiles.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $clr__light-grayish-cyan;
+  font-family: $ff__Space_Mono;
+  height: 100vh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+input {
+  background-color: $clr__light-grayish-cyan-1;
+  color: $clr__very-dark-cyan;
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+  min-height: 2.625rem;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+  height: 3rem;
+  width: 5rem;
+  display: block;
+  margin-inline: auto;
+}

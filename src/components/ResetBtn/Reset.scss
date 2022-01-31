@@ -1,0 +1,13 @@
+@import './../../styles/variabiles.scss';
+
+.form {
+  &__input {
+    cursor: pointer;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    background-color: $clr__very-dark-cyan-disabled;
+    color: $clr__dark-grayish-cyan;
+    border-radius: 0.3rem;
+  }
+}

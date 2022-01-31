@@ -1,0 +1,36 @@
+@import './styles/variabiles.scss';
+main {
+  max-width: 57.375rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  .container {
+    background-color: $clr__white;
+    min-height: 87vh;
+    min-width: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    font-weight: 700;
+    color: $clr__dark-grayish-cyan-1;
+
+    @include breakpoint(45em) {
+      min-height: 30rem;
+    }
+
+    &__calculator {
+      padding: 1rem;
+    }
+
+    &__total {
+      padding: 1rem;
+      background-color: $clr__very-dark-cyan;
+      border-radius: 1rem;
+      max-height: max-content;
+    }
+  }
+}

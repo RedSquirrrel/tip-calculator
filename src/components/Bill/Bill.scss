@@ -1,0 +1,22 @@
+@import './../../styles/variabiles.scss';
+
+.bill-container {
+  margin-bottom: 1rem;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  input[type='number'] {
+    background-image: url(./../../images/icon-dollar.svg);
+    background-position: 10px 15px;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    text-align: right;
+
+    &:active,
+    &:focus {
+      border: 2px solid $clr__strong__cyan;
+    }
+  }
+}

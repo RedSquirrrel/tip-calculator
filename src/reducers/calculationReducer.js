@@ -1,12 +1,12 @@
 const initialState = {
-  bill: 0,
-  percentage: 0,
-  numberOfPeople: 0,
-  customTip: 0,
+  bill: '',
+  percentage: '',
+  numberOfPeople: '',
+  customTip: '',
 };
 
 const calculationReducer = (state = initialState, action) => {
-  console.log(action.type, ':', state);
+  // console.log(action.type, ':', state);
   switch (action.type) {
     case 'NEW_BILL':
       return { ...state, bill: action.bill };
@@ -56,10 +56,10 @@ export const customTip = custom => {
   };
 };
 
-export const resetCalc = reset => {
+export const resetCalc = () => {
   return {
     type: 'RESET',
-    reset,
+    // reset,
   };
 };
 

@@ -1,0 +1,15 @@
+@import './variabiles.scss';
+
+.disabled {
+  background: $clr__very-dark-cyan-disabled;
+  color: hsla(hue($clr__very-dark-cyan), saturation($clr__very-dark-cyan), lightness($clr__very-dark-cyan), 0.5);
+  cursor: no-drop;
+}
+
+.error {
+  border: 2px solid $clr__notification;
+}
+
+.active {
+  border: 2px solid $clr__strong__cyan;
+}
