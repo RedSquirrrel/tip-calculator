@@ -3,11 +3,19 @@
 .total-container {
   padding: 1rem;
 
+  @include breakpoint(45em) {
+    padding: 2rem;
+  }
+
   &__flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+
+    @include breakpoint(45em) {
+      margin-bottom: 1.3rem;
+    }
 
     p {
       color: $clr__white;
@@ -18,9 +26,13 @@
       }
     }
 
-    div {
+    &__number {
       color: $clr__strong__cyan;
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-size: 1.5rem;
+
+      @include breakpoint(45em) {
+        font-size: 3rem;
+      }
     }
   }
 }

@@ -20,7 +20,7 @@ const Total = () => {
     <div className='total-container'>
       <div className='total-container__flex'>
         <p>
-          Tip Amount<span>/ per person </span>
+          Tip Amount<span>/ person </span>
         </p>
 
         <div className='total-container__flex__number'>
@@ -30,9 +30,9 @@ const Total = () => {
 
       <div className='total-container__flex'>
         <p>
-          Total <span> / per person </span>
+          Total <span> / person </span>
         </p>
-        <div>
+        <div className='total-container__flex__number'>
           $<AnimatedNumber value={roundedTotalAmountPerPers} formatValue={formatValue} />
         </div>
       </div>

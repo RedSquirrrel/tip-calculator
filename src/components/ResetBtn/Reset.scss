@@ -9,5 +9,16 @@
     background-color: $clr__very-dark-cyan-disabled;
     color: $clr__dark-grayish-cyan;
     border-radius: 0.3rem;
+    @include breakpoint(45em) {
+      padding: 0.7rem 0;
+    }
+  }
+
+  @include breakpoint(45em) {
+    top: 4.5rem;
+    left: 1rem;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
   }
 }

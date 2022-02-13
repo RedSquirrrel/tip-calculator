@@ -1,8 +1,18 @@
 @import './../../styles/variabiles.scss';
 
 .number-people {
+  &__notification {
+    display: flex;
+    justify-content: space-between;
+  }
+
   p {
     margin-bottom: 1rem;
+
+    @include breakpoint(45em) {
+      margin-top: 0.9rem;
+      margin-left: 1rem;
+    }
   }
 
   input[type='number'] {
@@ -10,6 +20,11 @@
     background-position: 10px 15px;
     background-repeat: no-repeat;
     padding-left: 2rem;
+    padding-right: 1.2rem;
     text-align: right;
+
+    @include breakpoint(45em) {
+      margin-left: 1rem;
+    }
   }
 }

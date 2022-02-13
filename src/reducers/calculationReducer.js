@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const calculationReducer = (state = initialState, action) => {
-  // console.log(action.type, ':', state);
   switch (action.type) {
     case 'NEW_BILL':
       return { ...state, bill: action.bill };

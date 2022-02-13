@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { resetCalc } from './../../reducers/calculationReducer';
+import { hideNotification } from '../../reducers/notificationReducer';
 import './Reset.scss';
 import './../../styles/_utilities.scss';
 
@@ -10,6 +11,7 @@ const ResetBtn = () => {
 
   const handleReset = () => {
     dispatch(resetCalc());
+    dispatch(hideNotification('', ''));
   };
 
   return (

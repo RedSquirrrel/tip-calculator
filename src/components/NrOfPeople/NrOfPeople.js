@@ -2,6 +2,7 @@ import React from 'react';
 import { nrPeople } from './../../reducers/calculationReducer';
 import { showNotification, hideNotification } from '../../reducers/notificationReducer';
 import { useDispatch, useSelector } from 'react-redux';
+import Notification from './../Notification/Notification';
 import './NrOfPeople.scss';
 
 const NrOfPeople = () => {
@@ -21,7 +22,11 @@ const NrOfPeople = () => {
 
   return (
     <div className='number-people'>
-      <p>Number of people</p>
+      <div className='number-people__notification'>
+        <p>Number of people</p>
+        <Notification />
+      </div>
+
       <input
         value={people}
         className={notificationStyle}

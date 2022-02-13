@@ -5,6 +5,11 @@
 
   p {
     margin-bottom: 1rem;
+
+    @include breakpoint(45em) {
+      margin-bottom: 1.5rem;
+      margin-left: 1rem;
+    }
   }
 
   input[type='number'] {
@@ -12,11 +17,17 @@
     background-position: 10px 15px;
     background-repeat: no-repeat;
     padding-left: 2rem;
+    padding-right: 1.2rem;
     text-align: right;
 
     &:active,
     &:focus {
       border: 2px solid $clr__strong__cyan;
+    }
+
+    @include breakpoint(45em) {
+      margin-top: -1rem;
+      margin-left: 1rem;
     }
   }
 }

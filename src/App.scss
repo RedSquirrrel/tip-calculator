@@ -4,6 +4,16 @@ main {
   margin: 0 auto;
   padding: 2rem 0;
 
+  @include breakpoint(45em) {
+    margin: 8.3rem auto;
+  }
+
+  img {
+    @include breakpoint(45em) {
+      margin-bottom: 6rem;
+    }
+  }
+
   .container {
     background-color: $clr__white;
     min-height: 87vh;
@@ -31,6 +41,10 @@ main {
       background-color: $clr__very-dark-cyan;
       border-radius: 1rem;
       max-height: max-content;
+
+      @include breakpoint(45em) {
+        width: 26rem;
+      }
     }
   }
 }
