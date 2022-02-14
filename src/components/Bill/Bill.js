@@ -6,7 +6,11 @@ import './Bill.scss';
 const Bill = () => {
   const dispatch = useDispatch();
   const bill = useSelector(state => state.calculation.bill);
+
   const addBill = e => {
+    if (e.target.value === '0') {
+      return;
+    }
     dispatch(createBill(e.target.value));
   };
 

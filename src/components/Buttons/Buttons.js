@@ -17,6 +17,9 @@ const Buttons = () => {
   );
 
   const handleCustom = e => {
+    if (e.target.value === '0') {
+      return;
+    }
     dispatch(customTip(e.target.value));
   };
 
